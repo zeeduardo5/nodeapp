@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="app" class="no-js">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>HR App</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="//netdna.bootstrapcdn.com/bootswatch/3.1.1/flatly/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css">
+</head>
+
+<body class="container">
+    <ul class="nav nav-pills">
+        <li class="active"><a href="#" >Home</a></li>
+        <li><a href="#/employees">Employees</a></li>
+        <li><a href="#/teams">Teams</a></li>
+    </ul>
+    <div ng-view></div>
+    <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.25/angular.js"></script>
+    <script src="//code.angularjs.org/1.2.25/angular-route.js"></script>
+    <script src="//code.angularjs.org/1.2.25/angular-resource.js"></script>
+   
+    <!--main app-->
+    <script src="js/app.js"></script>
+
+    <!--Routes-->
+    <script src="js/routes/routes.js"></script>
+
+    <!--Controllers-->
+    <script src="js/controllers/employeesCtrl.js"></script>
+    <script src="js/controllers/employeeCtrl.js"></script>
+    <script src="js/controllers/teamsCtrl.js"></script>
+    <script src="js/controllers/teamCtrl.js"></script>
+    
+    <!--Services-->
+    <script src="js/services/appServices.js"></script>
+
+    <!--Directives-->
+    <script src="js/directives/appDirectives.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="/css/style.css">
+</body>
+
+</html>
